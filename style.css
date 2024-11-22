@@ -1,0 +1,37 @@
+/* Styling for the game */
+body {
+    background: linear-gradient(180deg, rgb(176, 176, 234), rgb(120, 180, 234));
+    min-height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+}
+
+h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+.bubble {
+    position: absolute;
+    border-radius: 50%;
+    background: rgb(161, 99, 18);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    filter: hue-rotate(0deg);
+    animation: float 6s linear forwards;
+}
+
+/* Animation for bubble movement */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-120vh);
+        opacity: 0;
+    }
+}
